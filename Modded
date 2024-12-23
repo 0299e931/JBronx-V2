@@ -856,5 +856,12 @@ local Button = VisualTab:CreateButton({
                 coroutine.wrap(ESP)(newplr)
             end
         end)
+local  InfTab = Window:CreateTab("Inf Yeild", 4483362458) -- Title, Image
+local Button = InfTab:CreateButton({
+   Name = "Inf Yeild",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
     end, -- Closing the Callback function
 }) -- Closing the CreateButton function
